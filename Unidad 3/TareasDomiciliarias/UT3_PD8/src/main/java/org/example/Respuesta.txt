@@ -1,0 +1,22 @@
+
+Consumo de Memoria:
+ArrayList es un array dinámico que puede tener capacidad, pero accede más rápido a elementos sobre todo por indice.
+La lista enlazada usa más memoria por nodo ya que necesita saber quien es su siguiente mediante una refencia,no tiene una capcidad como tal.
+
+Tiempos de Ejecución en el peor caso:
+
+Agregar: complejidad O(n) revisa si no hay duplicados
+Buscar: O(n)
+Eliminar: O(n)
+Listar: O(n)
+Cantidad: O(1)
+Está vacía: O(1)
+
+Con lista enlazada es igual en tiempo, pero puede ser más lento si se quiere acceder por índice
+
+Ventaja de la ArrayList:
+Facilidad para iterar y acceder por índice a los índices.
+Más eficiente para listas de lectura frecuente siempre que estas no eliminen y agreguen elementos tan seguido.
+
+Ventaja de lista enlazada:
+Mejor para inserciones/eliminaciones frecuentes en cualquier parte, ya que no tengo que desplazar datos ni redimensionar

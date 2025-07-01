@@ -1,0 +1,6 @@
+El método palabras coindidentes lo que hace es recibir 2 arrays de strings como parámetros.
+Luego crea una lista para guardar cada elemento que se repita
+Recorre por indice cada elemento de la lista y revisamos si este también está en el 2do array, si es así
+es sumado a la lista de coincidentes.
+Por último tranforma la lista array para ser utlizada
+

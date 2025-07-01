@@ -1,0 +1,36 @@
+5.4
+a)log
+b)N**2
+c)N**2
+d)No, depende de la entrada
+
+5.5
+a)No llega a retornar el indice al final
+b)En algun momento se puede ir fuera del indice
+c)Se hace 1 ciclo mas en el caso de que el elemento se encuentre despues del medio
+d)Se hace 1 ciclo mas en el caso de que el eleemnto se encuentra antes del medio
+
+5.6
+a)O(n)
+b)O(n**2)
+c)O(n**2)
+
+5.10
+a)2,5ms
+b)3,37ms
+c)12,5ms
+d)62,5ms
+
+5.11
+a)12.000.000
+b)3.500.000
+c)34.641
+d)4.932
+
+5.13
+37-2/N-razicuadN-N log log N-N-N log N-Nlog(N**2)-Nlog**2 N- N**1.5-
+N**2-N**2 log N- N**3- 2**(N/2)-2**N-
+
+5.16
+a)M(N)=2**(2**(N-1))
+b)N=O(log log E) dias

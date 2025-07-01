@@ -1,0 +1,33 @@
+Explicación de los Métodos:
+
+substring:
+
+substring(int begin): Crea un string a partir del otro tomando en cuenta el indice que le indiquemos hasta el final.
+
+substring(int begin, int end): Crea un string a partir de otro tomando en el cuenta el rango que le iniquemos (inclume el begin pero al end no)
+
+split:
+
+split(string separador): Divide al string en elementos tomando en referencia al string como la terminación entre elemento, permitiendo por ejemplo crear un array con distintos elementos a partir de esto.
+
+split(string separador, int cantMaxima): Funciona igual pero este nos permite dar un límite de elementos que vayamos a tener en cuenta.
+
+subSequence():Es parecido al substring, pero retorna un CharSequence en lugar de un String. Si necesitamos este tipo de dato puede ser el indicado
+
+trim() : Elimina espacios en blanco al inicio y al final. También puede eliminar el character que le indiquemos del principio y del final
+
+toLowerCase()/toUpperCase(): Convierte el string a minúsculas o mayúsculas.
+
+indexOf(String str): Busca la primera vez que aparece un substring o carácter y devuelve su índice.
+
+indexOf(String str, int fromIndex): Identico al anteriro solo que inicia la búsqueda desde el índice que le indiquemos.
+
+lastIndexOf(String str): Funciona como indexOf, pero busca la última aparición del substring o carácter. También admite fromIndex igual que su contrario
+
+Contains(): Verifica si el string contiene una secuencia específica, es decir un subtring. Este retorna true o false
+
+replace(): Reemplaza caracteres o substrings que contenga el string .
+
+replaceAll(): Reemplaza todas las coincidencias de una expresión regular. por ejemplos los numeros
+
+replaceFirst(): Este solo modifica la primera coincidencia.

@@ -1,0 +1,10 @@
+1.1 Constructor vacío. Crea un objeto StringBuilder vacío con una capacidad inicial por defecto. Puedes agregarle contenido posteriormente.
+1.2 Constructor con capacidad inicial. Crea un objeto de tipo StringBuilder con una capacidad inicial definida. Esto nos ayuda si ya sabemos cuántos caracteres vamos a manejar.
+1.3 Constructor con cadena. Crea un objeto StringBuilder ya con el contenido de la cadena que le demos como parámetro.
+2. setLength. Ajusta la longitud del StringBuilder. Si el valor que le demos es menor que la longitud actual, se corta la cadena hasta donde lleguen los caracteres. Por el contrario si es mayor, se agregan caracteres nulos a lo último.
+3. ensureCapacity. Asegura que el StringBuilder tenga una capacidad mínima exacta. Si la capacidad actual es menor, se incrementa lo que le haga falta.
+4. append. Añade al final del StringBuilder la cadena pasemos como argumento. Sirve principalmente para concatenar texto de manera dinámica
+5. insert. Inserta una cadena (del largo que le digamos) en un índice dentro del StringBuilder.
+6. delete. Elimina la cadena entre los índices especificados.
+7. deleteCharAt. Elimina el carácter en el indice dado.
+8. reverse.Invierte la cadena actual.
