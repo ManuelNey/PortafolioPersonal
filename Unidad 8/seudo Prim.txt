@@ -1,0 +1,29 @@
+Prim():
+
+    Set<TVertice> U = new HashSet<>();      
+    Set<TVertice> V = new HashSet<>(this.getVertices().values());  
+    Set<TArista> T = new HashSet<>();            
+
+    TVertice vInicial = obtenerPrimeroDe(V)
+    U.add(vInicial)
+
+    mientras (!U contiene todos los elementos de V):
+        aristaMinima = null
+
+        para cada vértice u en U:
+            para cada adyacencia ady en u.getAdyacentes():
+                destino = ady.getDestino()
+
+                si (destino no está en U):
+                    aristaActual = nueva TArista(u.getEtiqueta(), destino.getEtiqueta(), ady.getCosto())
+
+                    si (aristaMinima es null o aristaActual.costo < aristaMinima.costo):
+                        aristaMinima = aristaActual
+
+        si (aristaMinima != null):
+            T.add(aristaMinima)
+            U.add(this.getVertices().get(aristaMinima.getEtiquetaDestino()))
+        sino:
+            lanzar error porque el grafo no es conexo
+
+    return new TGrafoNoDirigido(U, T)

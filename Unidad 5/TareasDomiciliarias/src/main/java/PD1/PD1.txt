@@ -1,0 +1,59 @@
+Buscar(EtiquetaBuscar): TNodoArbolGenerico
+Com
+
+Si etiqueta.equals(EtiquetaBuscar)
+	return this
+Sino
+	Nodo = null
+	Si siguienteHijo no es null
+		nodo = siguienteHijo.Buscar(EtiquetaBuscar)
+	FinSi
+	Si nodo es null y hermanoDerecho no es null
+		nodo = hermanoDerecho.Buscar(EtiquetaBuscar)
+	FinSi
+	return nodo
+FinSi
+Fin
+
+Insertar(unaEtiqueta, Dato, EtiquetaPadre)
+Com
+Si unaEtiqueta o Dato o EtiquetaPadre es null
+    retornar falso
+
+Si EtiquetaPadre.equals("")
+    Si raíz es null
+        raíz = nuevoNodo(unaEtiqueta, Dato)
+        retornar verdadero
+    retornar falso
+
+nodo = raíz.Buscar(EtiquetaPadre)
+Si nodo es null
+    retornar falso
+
+Si nodo.PrimerHijo es null
+    nodo.PrimerHijo = nuevoNodo(unaEtiqueta, Dato)
+Sino
+    ultimoHijo = nodo.PrimerHijo
+    mientras ultimoHijo.HermanoDer no es null
+        ultimoHijo = ultimoHijo.HermanoDer
+    ultimoHijo.HermanoDer = nuevoNodo(unaEtiqueta, Dato)
+FinSi
+Fin
+
+retornar verdadero
+
+Para insertar:
+Insertar un nodo para que sea la raiz, debería poder insertarse
+Insertar un hijo dado un padre y que este exista en el arbol, debería de ser posible
+Insertar raíz cuando ya existe una, no debería ser posible
+Insertar hijo con padre inexistente, no debería poder insertarse
+Insertar etiquetas nullas
+
+para Buscar:
+Buscar una etiqueta que esté en el arbol
+Buscar una etiqueta que no esté en el arbol
+Buscar etiquetas nulas
+
+listarIndentado:
+Verificar la identación de el listado
+Listar un arbol vacío

@@ -1,0 +1,59 @@
+EJERCICIO 1
+Implementación en la clase Object:
+La clase Object en Java implementa hashCode() simplemente retornando un número entero que
+corresponde a la dirección de memoria donde se aloja el objeto.
+Por lo tanto, dos objetos distintos (aunque tengan los mismos atributos)
+tendrán hash codes diferentes de manera predeterminada, ya que son diferente instancias
+
+Implementación en Integer:
+La clase Integer overridea el método hashCode y
+devuelve directamente su valor numérico como hash code:
+
+Implementación en String:
+String implementa el hashCode con una fórmula basada en los caracteres que la componen:
+
+vi que la formula es la siguiente:
+s[0]*31ⁿ⁻¹ + s[1]*31ⁿ⁻² + ... + s[n-1]
+se hace con un for del largo de la cadena y se eleva el exponente del 31.
+Se usa el 31 por su equilibrio entre dispersión y velocidad.
+Es un número primo, lo que hace que los numeros se dispersen de mejor manera y a su vez está cerca de un numero de base 2, el 32.
+
+
+¿Por qué las implementaciones son distintas?
+
+Object usa un valor único, para no tener en cuenta el contenido sino la instancia.
+Pero en el caso del Integer y String se usan valores a partir de su contenido para asegurar
+que 2 numeros o texto "sean iguales" si tienen el mismo hashcode.
+
+EJERCICIO 2
+
+Estructura Interna de HashMap:
+Un HashMap es por dentro en un array de "buckets", que almacenan pares con una clave-valor
+Se usan los hashcode para encontrar la ubicación en donde vamos a guarda un valor a partir de una clave
+
+Inserciones:
+Supongamos una tabla de tamaño 7 (índices del 0 a 6)
+y que los hashcode de estas palabras son los siguientes:
+
+Clave	    hashCode()	indice ()
+Hola	    45	        3
+HolaMundo	34	        6
+HashMap	    14      	0
+Colecciones	1   	    1
+
+Indice | Palabra
+0      | "HashMap"
+1      | "Colecciones"
+2      | nulo
+3      | "Hola"
+4      | nulo
+5      | nulo
+6      | "HolaMundo"
+7      | nulo
+
+Cuando vayamos a buscar la palabra Hola por ejemplo sabemos que problablemente
+estará en la pocision 3 del arreglo,sino lo está nos movemeremos según la forma
+impuesta por el hashmap hasta encontrar o Hola o un nulo (que en este caso la encontramos directamente)
+
+
+Fuentes que utilizé https://www.geeksforgeeks.org/importance-hashcode-method-java/ y https://www.geeksforgeeks.org/equals-hashcode-methods-java/

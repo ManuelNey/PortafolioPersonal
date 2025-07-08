@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="UT3_PD3 (1)" />
+        <module name="PD6 (2)" />
+        <module name="UT7Manu" />
+        <module name="AED-UT08" />
+        <module name="UT1_PD9yUT1_TA2Eje1y2" />
+        <module name="UT3_PD2 (1)" />
+        <module name="mavenproject1" />
+        <module name="ut3_ta2 (1)" />
+        <module name="PD8yUT1_TA2_Eje3" />
+        <module name="Palindromos" />
+        <module name="demo-junit5" />
+        <module name="UT2_PD1 (1)" />
+        <module name="untitled" />
+        <module name="PD12" />
+        <module name="UT3_PD2" />
+        <module name="PD10" />
+        <module name="UT3_PD3" />
+        <module name="TrabajosDomiciliarios" />
+        <module name="mavenproject1 (1)" />
+        <module name="PD1" />
+        <module name="ut3_ta2" />
+        <module name="PD2" />
+        <module name="PD5" />
+        <module name="PD4" />
+        <module name="PD7" />
+        <module name="arboles" />
+        <module name="PD6" />
+        <module name="TA2 (1)" />
+        <module name="UT2_PD1" />
+        <module name="PD8 (1)" />
+        <module name="ut8-ta3" />
+        <module name="PD8" />
+        <module name="UT2_PD3" />
+        <module name="PD12 (1)" />
+        <module name="AED_UT7" />
+        <module name="TareasDomiciliarias" />
+        <module name="Fibo" />
+        <module name="Purebaclase" />
+        <module name="demo-junit5 (1)" />
+        <module name="ut6-hashing" />
+        <module name="UT2_PD3 (1)" />
+        <module name="EliminarDuplicados (1)" />
+        <module name="TA2" />
+        <module name="untitled (1)" />
+        <module name="PD6 (1)" />
+        <module name="TA6" />
+        <module name="TA10" />
+        <module name="EliminarDuplicados" />
+        <module name="demo-junit5 (2)" />
+        <module name="ut05-trie" />
+        <module name="Problema3Listas" />
+        <module name="TareasDomiciliarias (1)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Palindromos" options="-Xlint --enable-preview" />
+    </option>
+  </component>
+</project>

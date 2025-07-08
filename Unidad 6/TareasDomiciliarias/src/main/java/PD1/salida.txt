@@ -1,0 +1,3 @@
+algoritmo,tiempo,memoria
+MedicionBuscarTrie,8140300,11197102
+MedicionBuscarTrieHashMap,17553500,9704300
