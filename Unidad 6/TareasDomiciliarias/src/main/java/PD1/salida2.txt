@@ -1,3 +1,6 @@
 algoritmo,tiempo,memoria
 MedicionPredecirTrie,5764200,11197102
 MedicionPredecirTrieHash,8456100,9704300
+algoritmo,tiempo,memoria
+MedicionPredecirTrie,8040700,11197102
+MedicionPredecirTrieHash,12476300,9704300

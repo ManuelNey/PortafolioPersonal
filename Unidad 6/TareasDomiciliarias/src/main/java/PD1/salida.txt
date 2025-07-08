@@ -1,3 +1,6 @@
 algoritmo,tiempo,memoria
 MedicionBuscarTrie,8140300,11197102
 MedicionBuscarTrieHashMap,17553500,9704300
+algoritmo,tiempo,memoria
+MedicionBuscarTrie,13441100,11197102
+MedicionBuscarTrieHashMap,26330500,9704300
