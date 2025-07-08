@@ -4,6 +4,7 @@ Estructura del Repositorio
 Cada carpeta de unidad incluye:
 
 📓 Reflexión personal sobre los contenidos dados.
+
 📂 Tareas prácticas y ejercicios resueltos de los PDs.
 
 Y por otro lado: 
